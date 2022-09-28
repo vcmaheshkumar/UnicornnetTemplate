@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../assets/image/logo.png" type="image/png">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="../assets/style/auth.css">
+    <script src="../assets/js/jquery.min.js" charset="utf-8"></script>
+    <script src="https://kit.fontawesome.com/6749156d31.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--form area start-->
+    <div class="form">
+        <!--login form start-->
+        <form class="login-form" method="post">
+            <i><img src="../assets/images/logo.png" style="width: 150px" /></i>
+            <input class="user-input" type="text" name="username" placeholder="Username" required>
+            <input class="user-input" type="password" name="password" placeholder="Password" required>
+            <div class="options-01">
+                <label class="remember-me"><input type="checkbox" name="rememberMe">Remember me</label>
+                <a href="forgot.html">Forgot your password?</a>
+            </div>
+            <input class="btn" type="submit" name="loginBtn" value="LOGIN">
+            <div class="options-02">
+                <p>Not Registered? <a style="cursor: pointer;">Create an Account</a></p>
+            </div>
+        </form>
+        <!--login form end-->
+        <!--signup form start-->
+        <form class="signup-form" method="post">
+            <i><img src="../assets/images/logo.png" style="width: 150px" /></i>
+            <input class="user-input" name="IpAddress" value="" hidden />
+            <input class="user-input" type="text" name="usernameRegister" placeholder="Username" required>
+            <input class="user-input" type="email" name="EmailRegister" placeholder="Email Address" required>
+            <input class="user-input" type="password" name="passwordRegister" placeholder="Password" required>
+            <input class="user-input" type="password" name="confirmPasswordRegister" placeholder="Confirmation Password" required>
+            <label class="remember-me" style="color: #fff; font-size: 12px;"><input type="checkbox" name="termsAndCondition" required>
+              &nbsp;&nbsp;Accept 
+              <a href="termsconditions.html" style="color: #f1d858;" target="_blank">Terms & Conditions</a> and 
+              <a href="privacypolicy.html" style="color: #f1d858;" target="_blank">Privacy & Policy</a>
+            </label>
+            <br/><br/>
+            <input class="btn" type="submit" name="registerBtn" value="SIGN UP">
+            <div class="options-02">
+                <p>Already Registered? <a style="cursor: pointer;">Sign In</a></p>
+            </div>
+        </form>
+        <!--signup form end-->
+    </div>
+    <!--form area end-->
+
+    <script src="../assets/js/urlMaintainer.js"></script>
+
+</body>
+
+</html>
